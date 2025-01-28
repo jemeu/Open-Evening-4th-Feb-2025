@@ -1,11 +1,12 @@
 # Example file showing a basic pygame "game loop"
 import pygame
 
+
 # pygame setup
 pygame.init()
 screen = pygame.display.set_mode((1920,1080))
 clock = pygame.time.Clock()
-running = True
+running = True  
 
 while running:
     # poll for events
@@ -18,6 +19,7 @@ while running:
     screen.fill("purple")
 
     # RENDER YOUR GAME HERE
+    pygame.display.set_caption('THIS IS A TEST')
 
     # flip() the display to put your work on screen
     pygame.display.flip()
